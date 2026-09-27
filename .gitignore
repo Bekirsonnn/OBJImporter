@@ -30,3 +30,23 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio / MSBuild
+.vs/
+Debug/
+Release/
+x64/
+ipch/
+*.suo
+*.user
+*.aps
+*.ilk
+*.pdb
+*.obj
+*.exe
+*.dll
+*.lib
+
+# OS Files
+.DS_Store
+Thumbs.db
