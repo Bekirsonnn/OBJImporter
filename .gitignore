@@ -1,0 +1,45 @@
+# =========================
+# 3D models and assets
+# =========================
+*.obj
+*.mtl
+
+# =========================
+# Visual Studio build output
+# =========================
+x64/
+x86/
+Debug/
+Release/
+Debug/
+ipch/
+.vs/
+OBJImporter/
+
+# Compiled binaries and intermediate files
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.obj
+*.pch
+*.idb
+*.tlog
+*.lastbuildstate
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+
+# =========================
+# Visual Studio user settings
+# =========================
+*.vcxproj.user
+*.suo
+
+# =========================
+# Operating system files
+# =========================
+Thumbs.db
+.DS_Store
