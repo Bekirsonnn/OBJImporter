@@ -78,10 +78,6 @@ Negative OBJ indices are also converted relative to the number of corresponding 
 - The importer currently focuses on geometry data and does not provide a complete implementation of every Wavefront OBJ feature.
 - Make sure your OBJ files use supported vertex, texture coordinate, normal, and face formats.
 
-## License
-
-Add your preferred open-source license here if you intend to distribute the project.
-
 ## Contributions
 
 Suggestions, bug reports, and contributions are welcome!
