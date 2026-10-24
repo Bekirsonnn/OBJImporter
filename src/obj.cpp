@@ -95,7 +95,7 @@ bool OBJ::ParseFaces(std::istringstream &stream)
             result = std::from_chars(corner.data(), corner.data() + corner.size(), fv.posIdx);
             if (result.ec != std::errc{} || result.ptr != corner.data() + corner.size())
             {
-                std::cerr << "Invaild Position Index" << std::endl;
+                std::cerr << "Invaild Position Index\n";
                 return false;
             }
 
@@ -109,7 +109,7 @@ bool OBJ::ParseFaces(std::istringstream &stream)
             result = std::from_chars(corner.data(), corner.data() + frstSlash, fv.posIdx);
             if (result.ec != std::errc{} || result.ptr != corner.data() + frstSlash)
             {
-                std::cerr << "Invaild Position Index" << std::endl;
+                std::cerr << "Invaild Position Index\n";
                 return false;
             }
 
@@ -126,7 +126,7 @@ bool OBJ::ParseFaces(std::istringstream &stream)
                 result = std::from_chars(corner.data() + frstSlash + 1, corner.data() + corner.size(), fv.texCoordIdx);
                 if (result.ec != std::errc{} || result.ptr != corner.data() + corner.size())
                 {
-                    std::cerr << "Invaild Texture Coordinate" << std::endl;
+                    std::cerr << "Invaild Texture Coordinate\n";
                     return false;
                 }
 
@@ -144,7 +144,7 @@ bool OBJ::ParseFaces(std::istringstream &stream)
                     result = std::from_chars(corner.data() + frstSlash + 1, corner.data() + scndSlash, fv.texCoordIdx);
                     if (result.ec != std::errc{} || result.ptr != corner.data() + scndSlash)
                     {
-                        std::cerr << "Invaild Texture Coordinate" << std::endl;
+                        std::cerr << "Invaild Texture Coordinate\n";
                         return false;
                     }
 
@@ -157,7 +157,7 @@ bool OBJ::ParseFaces(std::istringstream &stream)
                 result = std::from_chars(corner.data() + scndSlash + 1, corner.data() + corner.size(), fv.normalIdx);
                 if (result.ec != std::errc{} || result.ptr != corner.data() + corner.size())
                 {
-                    std::cerr << "Invaild Normal Coordinate" << std::endl;
+                    std::cerr << "Invaild Normal Coordinate\n";
                     return false;
                 }
 
@@ -197,7 +197,7 @@ bool OBJ::LoadOBJ()
         {
             if (!ParseVerts(m_Stream))
             {
-                std::cerr << "Failed to Parse Vertices" << "\n";
+                std::cerr << "Failed to Parse Vertices\n";
                 return false;
             }
         }
@@ -221,7 +221,7 @@ bool OBJ::LoadOBJ()
         {
             if (!ParseFaces(m_Stream))
             {
-                std::cerr << "Failed to Parse Faces" << "\n";
+                std::cerr << "Failed to Parse Faces\n";
                 return false;
             }
         }
